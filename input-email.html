@@ -1,0 +1,43 @@
+<!--
+    required - campo que não pode ficar em branco para ser enviadp
+-->
+
+<form action="">
+    <input type="email"
+       required  
+    >
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    multiple - campo que poderá ser enviado vários emails separados por vírgulas
+-->
+
+<form>
+    <input type="email" multiple>
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    minlength - número de caracteres mínimos
+    maxlength - número máximo de caracteres
+    size - caracteres total máximos da caixa de texto
+-->
+
+<form>
+    <input type="email" minlength="8">
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    pattern - serve para escificar um padrão
+-->
+
+<form>
+    <input type="email" 
+    pattern=".+@tucurui\.ufpa\.br"
+    title="Email instirucional"
+    placeholder="fulano@tucurui.ufpa.br"
+    >
+    <button type="submit">Enviar</button>
+</form>

@@ -1,0 +1,56 @@
+<label for="nome">Nome completo</label>
+<input type="text">
+<button> Enviar </button>
+
+<!--
+    Atributos button
+    type:
+        -submit, fará com que o formulário seja enviado, submetido
+        - button também faz a mesma função
+-->
+<form>
+    <label for="nomeC">Nome</label>
+    <input id="nomeC" type="text" value="">
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+</form>
+
+<!--
+    Atributos button
+    autofocus
+        -autofocus serve para clicar o enter e enviar o daod do formulário, na pagina o primeiro
+        autofocus vai nele, seve para página de login por exemplo
+-->
+
+<form>
+    <label for="idade"> Idade </label>
+    <input type="text">
+    <button autofocus>Enviar</button>
+</form>
+
+<!--
+    Atributos button
+    disabled
+        -desabilitará o botão até determinada condição, por exemplo, está sendo preenchido o formulário
+        e o botão fica desabilitador até que todo o formulário esteja preenchido
+        no exemplo abaixo estará sempre desabilitado, pois não está programado para habilitar em 
+        determinada condição
+-->
+<form>
+    <label for="grauI">Escolaridade</label>
+    <input id="grauI" type="text">
+    <button disabled> Done </button>
+</form>
+
+<!--
+    Atributos button
+    form
+        -serve para linkar um formulário, ao clicar no botão, o formulário referenciado que será enviado
+-->
+
+<form action="" id="meu-form">
+    <input type="text" value="">
+
+</form>
+<button type="submit" form="meu-form"> Enviar </button>
+<button type="reset" form="meu-form">Limpar</button>

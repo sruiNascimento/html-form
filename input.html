@@ -1,0 +1,61 @@
+<!--
+    Input
+    type:
+         number
+         text
+         date
+         email
+         file
+         password
+-->
+<label for="typeNumber">Tipo Numero</label>
+<input id="typeNumber" type="number"></br>
+<label>Data</label>
+<input id="typeDate" type="date"></br>
+<label for="typeEmail">E-mail</label>
+<input id="typeEmail" type="email"></br>
+<label for="">Arquivo</label>
+<input id="typeFile" type="file"></br>
+<label id="typePass">Password</label>
+<input type="password" id="typePass"></br>
+
+<!--
+    Atributso do input
+    Primeiro trato foi o type: que é o tipo de dado a ser inserido, como
+    texte, number, data, email, password, file, email e outros.
+
+    autocomplete, automaticamente ele vai sugerir completar, com o que já
+    foi usado no navegador
+
+    autofocus, automaticamente o cursos irá ficar piscando. obs: somente 1 por página
+
+    value, ele deixa valor padrão na caixa
+
+    readonly, deixa a caixa de testo somenta para leitura
+
+    form, input está fora do forma, mas eu envio o inputo com o formulário, precisa do atributo name
+
+    required (quase todos) pois nem todos campos específicos aceitam
+
+    placehgolder, mensagem padrão no campo que some quando a pessoa começa a digitar
+-->
+<label for="attAuto">Autocomplete</label>
+<input type="email" autocomplete="email" id="attAuto"></br>
+
+<label for="attFocus">Focus</label>
+<input type="text" autofocus id="attFocus"></br>
+
+<label for="attDisabe">Desabilitado</label>
+<input type="text" disabled id="attDisabe"></br>
+
+<label for="attValue">Valor padrão</label>
+<input type="text" value="Fulano de tal"></br>
+<!--Servirá para o backend-->
+<form id="meu-form"></form>
+<input nome="email" type="email" form="=meu-form"></br>
+<!--Campo orbigatório-->
+<label for="attRequi">Obrigatório</label>
+<input type="CPF" required id="attRequi"></br>
+<label for="attPlaceH">Mensagem padrão com PH</label>
+<input type="password" placeholder="Digite sua senha" id="attPlaceH"> 
+<button id="btnPassword">Ok</button>
